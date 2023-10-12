@@ -13,23 +13,30 @@ import java.util.logging.Logger;
  */
 public class Hilo extends Thread{
     Tablero lamina;
+    Pelota pelota;
+   static double velocidad=3;
     
     Hilo(Tablero lamina){
+   
     this.lamina=lamina;
-    
-    
+   
     }
+    
     
     @Override
     public void run(){
+   
+        
+                
     while(true){
         try {
-            Thread.sleep(1);
+            Thread.sleep((long)velocidad);
+            
         } catch (InterruptedException ex) {
             Logger.getLogger(Hilo.class.getName()).log(Level.SEVERE, null, ex);
         }
     lamina.repaint();
-    
+ 
     }
     
     }

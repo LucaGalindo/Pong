@@ -11,7 +11,7 @@ import java.awt.event.*;
  */
 public class EventoTeclado extends KeyAdapter{
 
-static boolean der,iz;
+static boolean der,iz,yes,no;
 
     public void keyPressed(KeyEvent e){
     int id=e.getKeyCode();
@@ -23,6 +23,12 @@ static boolean der,iz;
     der=true;
     }
  
+    if(id==KeyEvent.VK_Y){
+    yes=true;
+    }
+    
+  
+    
     }
     
     public void keyReleased(KeyEvent e){
@@ -35,6 +41,12 @@ static boolean der,iz;
     if(id==KeyEvent.VK_RIGHT){
      der=false;
     }
+    
+    if(id==KeyEvent.VK_Y){
+    yes=false;
+    }
+    
+
  
   }
     

@@ -25,8 +25,10 @@ public class Raqueta {
    return new Rectangle2D.Double(x, y, ancho, alto);
    }
    
+ 
+   
    public void moverR1(Rectangle limites){
-   if(EventoTeclado.der==true && x<600){
+   if(EventoTeclado.der==true && x<limites.getMaxX()-100){
    x++;
    }
    

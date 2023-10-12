@@ -2,6 +2,7 @@
 package principal;
 
 import clases.Ventana;
+
 import javax.swing.JFrame;
 
 public class Principal {
@@ -12,6 +13,7 @@ public class Principal {
         ventana.setVisible(true);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
        
+
     }
     
 }

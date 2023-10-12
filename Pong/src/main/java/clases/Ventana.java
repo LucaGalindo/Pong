@@ -16,14 +16,15 @@ public class Ventana extends JFrame{
    
     public Ventana(){ 
     setTitle("Pong");
-    setSize(700,800);
+    setSize(600,800);
     setLocationRelativeTo(null);
     setResizable(false);
     addKeyListener(new EventoTeclado());
-    
+
    lamina= new Tablero();
    add(lamina);
-  hilo = new Hilo(lamina);
+   
+   hilo = new Hilo(lamina);
    hilo.start();
 
 
